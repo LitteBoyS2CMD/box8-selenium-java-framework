@@ -1,0 +1,14 @@
+[
+	{
+	  "lastName": "Ma",
+	  "firstName": "Đại Vương",
+      "email": "autotest",
+      "password": "Password123!"
+    },
+    {
+	  "lastName": "Nguyễn Thị",
+	  "firstName": "Phương Liên",
+      "email": "autotest",
+      "password": "Password123!"
+    }
+]

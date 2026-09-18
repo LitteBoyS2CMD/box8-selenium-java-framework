@@ -1,0 +1,18 @@
+[
+	{
+      "email": "solomon.dev@gmail.com",
+      "password": "Password123!"
+    },
+     {
+      "email": "lia.tester@gmail.com",
+      "password": "Password123!"
+    },
+	{
+	  "email": "  solomon.dev@gmail.com",
+	  "password": "Password123!"
+	 },
+	 {
+	  "email": "solomon.dev@gmail.com",
+	  "password": "  Password123!"
+	 }
+]

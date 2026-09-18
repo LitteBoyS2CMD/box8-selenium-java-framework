@@ -1,0 +1,22 @@
+[
+  {
+    "email": "user_khong_ton_tai@gmail.com",
+    "password": "12345678!",
+	"expectedErrorMessage": "Thông tin đăng nhập không chính xác!!!"
+  },
+  {
+    "email": "solomon.dev@gmail.com",
+    "password": "1234554321",
+	"expectedErrorMessage": "Thông tin đăng nhập không chính xác!!!"
+  },
+  {
+	"email": "Solomon.dev@gmail.com",
+	"password": "Password123!",
+	"expectedErrorMessage": "Thông tin đăng nhập không chính xác!!!"
+  },
+  {
+	"email": "solomon.dev@gmail.com",
+	"password": "pAssword123!",
+	"expectedErrorMessage": "Thông tin đăng nhập không chính xác!!!"
+  }
+]
