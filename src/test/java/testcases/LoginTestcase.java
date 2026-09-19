@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import commons.GlobalDataReader;
 import dataObjects.UserDataLogin;
-import dataObjects.UserIncorrectLoginData;
+import dataObjects.UserIncorrectDataLogin;
 import pageObjects.LoginPageObject;
 
 public class LoginTestcase extends BaseTest {
@@ -21,18 +21,18 @@ public class LoginTestcase extends BaseTest {
         loginPage = new LoginPageObject(driver);
     }
     
-    @DataProvider(name = "getUserLoginData")
-    public UserDataLogin[] getUserLoginData() {
-    	return GlobalDataReader.getJsonDataArray("LoginData.json", UserDataLogin[].class);
+    @DataProvider(name = "getUserLogin")
+    public UserDataLogin[] getUserLogin() {
+    	return GlobalDataReader.getJsonDataArray("CorrectLoginData.json", UserDataLogin[].class);
     }
-    
-    @DataProvider(name = "getUserIncorrectLoginData")
-    public UserIncorrectLoginData[] getUserIncorrectLoginData() {
-    	return GlobalDataReader.getJsonDataArray("IncorrectLoginData.json", UserIncorrectLoginData[].class);
+   
+    @DataProvider(name = "getUserIncorrectLogin")
+    public UserIncorrectDataLogin[] getUserIncorrectLogin() {
+    	return GlobalDataReader.getJsonDataArray("IncorrectLoginData.json", UserIncorrectDataLogin[].class);
     }
     
     // Testcase đăng nhập thành công
-    @Test(dataProvider = "getUserLoginData")
+    @Test(dataProvider = "getUserLogin")
     public void TC_01_Login_Completed(UserDataLogin user) {
         loginPage.enterEmail(user.getEmail());
         loginPage.enterPassword(user.getPassword());
@@ -78,8 +78,8 @@ public class LoginTestcase extends BaseTest {
     }
     
     // Test login các trường hợp không hợp lệ: Email không tồn tại, Sai mật khẩu
-    @Test(dataProvider = "getUserIncorrectLoginData")
-    public void TC_05_Incorrect_Login_Data(UserIncorrectLoginData user) {
+    @Test(dataProvider = "getUserIncorrectLogin")
+    public void TC_05_Incorrect_Login_Data(UserIncorrectDataLogin user) {
     	loginPage.enterEmail(user.getEmail());
     	loginPage.enterPassword(user.getPassword());
     	

@@ -1,5 +1,6 @@
 package testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -8,6 +9,7 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import commons.GlobalDataReader;
 import dataObjects.UserDataRegister;
+import dataObjects.UserIncorrectDataRegister;
 import pageObjects.RegisterPageObject;
 
 public class RegisterTestcase extends BaseTest {
@@ -19,12 +21,19 @@ public class RegisterTestcase extends BaseTest {
         registerPage = new RegisterPageObject(driver);
     }
 	
-	@DataProvider(name = "getUserRegisterData")
-	public UserDataRegister[] getUserRegisterData() {
-		return GlobalDataReader.getJsonDataArray("RegisterData.json", UserDataRegister[].class);
+	@DataProvider(name = "getUserRegister")
+	public UserDataRegister[] getUserRegister() {
+		return GlobalDataReader.getJsonDataArray("CorrectRegisterData.json", UserDataRegister[].class);
 	}
 	
-	@Test(dataProvider = "getUserRegisterData")
+	@DataProvider(name = "getUserIncorrectRegister")
+	public UserIncorrectDataRegister[] getUserIncorrectRegister() {
+		return GlobalDataReader.getJsonDataArray("IncorrectRegisterData.json", UserIncorrectDataRegister[].class);
+	}
+
+
+	// Hàm đăng ký thành công
+	@Test(dataProvider = "getUserRegister")
 	public void TC_01_Register_Completed(UserDataRegister user) {
 		registerPage.enterLastName(user.getLastName());
 		registerPage.enterFirstName(user.getFirstName());
@@ -37,6 +46,7 @@ public class RegisterTestcase extends BaseTest {
 		registerPage.waitForUrlContains(driver, "https://box8.vn/");
 	}
 	
+	// Hàm đăng ký khi bỏ trống form
 	@Test
 	public void TC_02_Register_Null_Data() {
 		registerPage.enterLastName("");
@@ -46,6 +56,59 @@ public class RegisterTestcase extends BaseTest {
 		
 		registerPage.clickBtnRegister();
 	}
+	
+	// Hàm đăng ký bỏ trống Họ, Tên
+	public void TC_03_Register_Null_Lastname() {
+		registerPage.enterLastName("");
+		registerPage.enterFirstName("Phương Liên");
+		registerPage.enterEmail("lia.be@gmail.com");
+		registerPage.enterPassword("12345678Lia");
+		
+		registerPage.clickBtnRegister();
+		
+		// Assert: Xác nhận form bị chặn, URL không đổi sang trang chủ
+        Assert.assertEquals(driver.getCurrentUrl(), "https://box8.vn/account/register");
+	}
+	
+	public void TC_04_Register_Null_Firstname() {
+		registerPage.enterLastName("Nguyễn Thị");
+		registerPage.enterFirstName("");
+		registerPage.enterEmail("lia.be@gmail.com");
+		registerPage.enterPassword("12345678Lia");
+		
+		registerPage.clickBtnRegister();
+		
+		// Assert: Xác nhận form bị chặn, URL không đổi sang trang chủ
+        Assert.assertEquals(driver.getCurrentUrl(), "https://box8.vn/account/register");
+	}
+	
+	// Hàm đăng ký bỏ trống Email, Password
+	public void TC_05_Register_Null_Email() {
+		registerPage.enterLastName("Nguyễn Thị");
+		registerPage.enterFirstName("Phương Liên");
+		registerPage.enterEmail("");
+		registerPage.enterPassword("12345678Lia");
+		
+		registerPage.clickBtnRegister();
+		
+		// Assert: Xác nhận form bị chặn, URL không đổi sang trang chủ
+        Assert.assertEquals(driver.getCurrentUrl(), "https://box8.vn/account/register");
+	}
+	
+	public void TC_06_Register_Null_Password() {
+		registerPage.enterLastName("Nguyễn Thị");
+		registerPage.enterFirstName("Phương Liên");
+		registerPage.enterEmail("lia.be@gmail.com");
+		registerPage.enterPassword("");
+		
+		registerPage.clickBtnRegister();
+		
+		// Assert: Xác nhận form bị chặn, URL không đổi sang trang chủ
+        Assert.assertEquals(driver.getCurrentUrl(), "https://box8.vn/account/register");
+	}
+	
+	// Hàm đăng ký email sai định dạng
+	
 	
 	@AfterMethod(alwaysRun = true)
     public void afterMethod() {

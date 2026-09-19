@@ -1,0 +1,44 @@
+[
+	{
+		"lastname": "Nguyễn Thị",
+		"firstname": "Phương Liên",
+		"email": "lia02012005@gmail",
+		"password": "12345678Lia@",
+		"description": "Email thiếu tên miền"
+	},
+	{
+		"lastname": "Nguyễn Thị",
+		"firstname": "Phương Liên",
+		"email": "lia02012005gmail.com",
+		"password": "12345678Lia@",
+		"description": "Email thiếu @"
+	},
+	{
+		"lastname": "Nguyễn Thị",
+		"firstname": "Phương Liên",
+		"email": "lia02012005gmail.",
+		"password": "12345678Lia@",
+		"description": "Email kết thúc bằng dấu chấm"
+	},
+	{
+	    "lastname": "Nguyễn Lê",
+	    "firstname": "Châu Anh",
+	    "email": "kiera@@gmail.com",
+		"password": "12345678Kiera@",
+		"description": "Email chứa nhiều hơn 1 ký tự @"
+	},
+	{
+		"lastname": "Nguyễn Lê",
+		"firstname": "Châu Anh",
+		"email": "<script>alert(1)</script>@gmail.com",
+		"password": "12345678Kiera@",
+		"description": "Email chứa ký tự script"
+	},
+	{
+		"lastname": "Nguyễn Lê",
+		"firstname": "Châu Anh",
+		"email": "' OR '1'='1@gmail.com",
+		"password": "12345678Kierra@",
+		"description": "Email chứa ký tự SQL Injection"
+	}
+]

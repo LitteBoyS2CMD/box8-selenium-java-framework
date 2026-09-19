@@ -7,8 +7,8 @@
 
     <test name="Run on Chrome">
         <classes>
-        	<!-- <class name="testcases.RegisterTestcase"/> -->
-            <class name="testcases.LoginTestcase" />
+        	<class name="testcases.RegisterTestcase"/> 
+            <!-- <class name="testcases.LoginTestcase" /> -->
         </classes>
     </test>
 
