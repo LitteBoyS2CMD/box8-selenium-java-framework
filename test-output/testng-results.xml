@@ -1,201 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-19T13:40:41 GMT+07:00" name="Suite" finished-at="2026-09-19T13:42:22 GMT+07:00" duration-ms="101267">
+  <suite started-at="2026-09-20T17:29:32 GMT+07:00" name="Suite" finished-at="2026-09-20T17:32:00 GMT+07:00" duration-ms="148098">
     <groups>
     </groups>
-    <test started-at="2026-09-19T13:40:41 GMT+07:00" name="Run on Chrome" finished-at="2026-09-19T13:42:22 GMT+07:00" duration-ms="101267">
-      <class name="testcases.LoginTestcase">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:40:44 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:41:00 GMT+07:00" duration-ms="16181" status="PASS">
+    <test started-at="2026-09-20T17:29:32 GMT+07:00" name="Run on Chrome" finished-at="2026-09-20T17:32:00 GMT+07:00" duration-ms="148098">
+      <class name="testcases.RegisterTestcase">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:29:32 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:29:36 GMT+07:00" duration-ms="4089" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_01_Login_Completed(dataObjects.UserDataLogin)[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:00 GMT+07:00" name="TC_01_Login_Completed" data-provider="getUserLoginData" finished-at="2026-09-19T13:41:05 GMT+07:00" duration-ms="4762" status="PASS">
+        <test-method signature="TC_01_Register_Completed(dataObjects.UserDataRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:29:36 GMT+07:00" name="TC_01_Register_Completed" data-provider="getUserRegister" finished-at="2026-09-20T17:29:41 GMT+07:00" duration-ms="4802" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UserDataLogin(email=solomon.dev@gmail.com, password=Password123!)]]>
+                <![CDATA[UserDataRegister(lastName=Ma, firstName=Đại Vương, email=autotest, password=Password123!)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Login_Completed -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:05 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:41:05 GMT+07:00" duration-ms="596" status="PASS">
+        </test-method> <!-- TC_01_Register_Completed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:29:41 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:29:42 GMT+07:00" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:05 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:41:12 GMT+07:00" duration-ms="6594" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:29:42 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:29:51 GMT+07:00" duration-ms="9683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_01_Login_Completed(dataObjects.UserDataLogin)[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:12 GMT+07:00" name="TC_01_Login_Completed" data-provider="getUserLoginData" finished-at="2026-09-19T13:41:21 GMT+07:00" duration-ms="9035" status="PASS">
+        <test-method signature="TC_01_Register_Completed(dataObjects.UserDataRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:29:51 GMT+07:00" name="TC_01_Register_Completed" data-provider="getUserRegister" finished-at="2026-09-20T17:29:57 GMT+07:00" duration-ms="6159" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UserDataLogin(email=lia.tester@gmail.com, password=Password123!)]]>
+                <![CDATA[UserDataRegister(lastName=Nguyễn Thị, firstName=Phương Liên, email=autotest, password=Password123!)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Login_Completed -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:21 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:41:22 GMT+07:00" duration-ms="1019" status="PASS">
+        </test-method> <!-- TC_01_Register_Completed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:29:57 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:29:58 GMT+07:00" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:22 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:41:25 GMT+07:00" duration-ms="2819" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:29:58 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:30:02 GMT+07:00" duration-ms="3786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_01_Login_Completed(dataObjects.UserDataLogin)[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:25 GMT+07:00" name="TC_01_Login_Completed" data-provider="getUserLoginData" finished-at="2026-09-19T13:41:33 GMT+07:00" duration-ms="8555" status="PASS">
+        <test-method signature="TC_02_Register_Null_Data()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:02 GMT+07:00" name="TC_02_Register_Null_Data" finished-at="2026-09-20T17:30:08 GMT+07:00" duration-ms="6145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Register_Null_Data -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:08 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:30:08 GMT+07:00" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:08 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:30:14 GMT+07:00" duration-ms="5777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_03_Register_Null_Lastname()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:14 GMT+07:00" name="TC_03_Register_Null_Lastname" finished-at="2026-09-20T17:30:16 GMT+07:00" duration-ms="2290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Register_Null_Lastname -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:16 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:30:17 GMT+07:00" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:17 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:30:22 GMT+07:00" duration-ms="4952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_04_Register_Null_Firstname()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:22 GMT+07:00" name="TC_04_Register_Null_Firstname" finished-at="2026-09-20T17:30:24 GMT+07:00" duration-ms="2283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Register_Null_Firstname -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:24 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:30:24 GMT+07:00" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:24 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:30:29 GMT+07:00" duration-ms="4786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_05_Register_Null_Email()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:29 GMT+07:00" name="TC_05_Register_Null_Email" finished-at="2026-09-20T17:30:32 GMT+07:00" duration-ms="2406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Register_Null_Email -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:32 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:30:33 GMT+07:00" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:33 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:30:39 GMT+07:00" duration-ms="6144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_06_Register_Null_Password()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:39 GMT+07:00" name="TC_06_Register_Null_Password" finished-at="2026-09-20T17:30:41 GMT+07:00" duration-ms="2031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06_Register_Null_Password -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:41 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:30:41 GMT+07:00" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:41 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:30:47 GMT+07:00" duration-ms="5266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_07_Register_Incorrect_Email(dataObjects.UserIncorrectEmailRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:47 GMT+07:00" name="TC_07_Register_Incorrect_Email" data-provider="getUserIncorrectEmailRegister" finished-at="2026-09-20T17:30:51 GMT+07:00" duration-ms="4031" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UserDataLogin(email=  solomon.dev@gmail.com, password=Password123!)]]>
+                <![CDATA[UserIncorrectEmailRegister(lastname=Nguyễn Thị, firstname=Phương Liên, email=lia02012005@gmail, password=12345678Lia@, description=Email thiếu tên miền)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Login_Completed -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:33 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:41:34 GMT+07:00" duration-ms="584" status="PASS">
+        </test-method> <!-- TC_07_Register_Incorrect_Email -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:51 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:30:51 GMT+07:00" duration-ms="472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:34 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:41:39 GMT+07:00" duration-ms="5012" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:51 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:30:57 GMT+07:00" duration-ms="5438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_01_Login_Completed(dataObjects.UserDataLogin)[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:39 GMT+07:00" name="TC_01_Login_Completed" data-provider="getUserLoginData" finished-at="2026-09-19T13:41:43 GMT+07:00" duration-ms="3547" status="PASS">
+        <test-method signature="TC_07_Register_Incorrect_Email(dataObjects.UserIncorrectEmailRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:57 GMT+07:00" name="TC_07_Register_Incorrect_Email" data-provider="getUserIncorrectEmailRegister" finished-at="2026-09-20T17:30:59 GMT+07:00" duration-ms="2163" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UserDataLogin(email=solomon.dev@gmail.com, password=  Password123!)]]>
+                <![CDATA[UserIncorrectEmailRegister(lastname=Nguyễn Thị, firstname=Phương Liên, email=lia02012005gmail.com, password=12345678Lia@, description=Email thiếu @)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Login_Completed -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:43 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:41:43 GMT+07:00" duration-ms="451" status="PASS">
+        </test-method> <!-- TC_07_Register_Incorrect_Email -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:59 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:30:59 GMT+07:00" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:43 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:41:47 GMT+07:00" duration-ms="3929" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:30:59 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:31:01 GMT+07:00" duration-ms="1914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_02_Login_Null_Data()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:47 GMT+07:00" name="TC_02_Login_Null_Data" finished-at="2026-09-19T13:41:48 GMT+07:00" duration-ms="1052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Login_Null_Data -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:48 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:41:48 GMT+07:00" duration-ms="400" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:48 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:41:53 GMT+07:00" duration-ms="4143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_03_Login_Null_Email()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:53 GMT+07:00" name="TC_03_Login_Null_Email" finished-at="2026-09-19T13:41:54 GMT+07:00" duration-ms="1024" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Login_Null_Email -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:54 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:41:54 GMT+07:00" duration-ms="359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:54 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:41:58 GMT+07:00" duration-ms="4042" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_04_Login_Null_Password()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:58 GMT+07:00" name="TC_04_Login_Null_Password" finished-at="2026-09-19T13:41:59 GMT+07:00" duration-ms="1038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Login_Null_Password -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:41:59 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:41:59 GMT+07:00" duration-ms="439" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:00 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:42:03 GMT+07:00" duration-ms="3980" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_05_Incorrect_Login_Data(dataObjects.UserIncorrectLoginData)[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:03 GMT+07:00" name="TC_05_Incorrect_Login_Data" data-provider="getUserIncorrectLoginData" finished-at="2026-09-19T13:42:05 GMT+07:00" duration-ms="1061" status="PASS">
+        <test-method signature="TC_07_Register_Incorrect_Email(dataObjects.UserIncorrectEmailRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:01 GMT+07:00" name="TC_07_Register_Incorrect_Email" data-provider="getUserIncorrectEmailRegister" finished-at="2026-09-20T17:31:10 GMT+07:00" duration-ms="8910" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UserIncorrectLoginData(email=user_khong_ton_tai@gmail.com, password=12345678!, expectedErrorMessage=Thông tin đăng nhập không chính xác!!!)]]>
+                <![CDATA[UserIncorrectEmailRegister(lastname=Nguyễn Thị, firstname=Phương Liên, email=lia02012005gmail., password=12345678Lia@, description=Email kết thúc bằng dấu chấm)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_Incorrect_Login_Data -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:05 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:42:05 GMT+07:00" duration-ms="350" status="PASS">
+        </test-method> <!-- TC_07_Register_Incorrect_Email -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:10 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:31:11 GMT+07:00" duration-ms="516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:05 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:42:09 GMT+07:00" duration-ms="4131" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:11 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:31:18 GMT+07:00" duration-ms="7435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_05_Incorrect_Login_Data(dataObjects.UserIncorrectLoginData)[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:09 GMT+07:00" name="TC_05_Incorrect_Login_Data" data-provider="getUserIncorrectLoginData" finished-at="2026-09-19T13:42:10 GMT+07:00" duration-ms="1144" status="PASS">
+        <test-method signature="TC_07_Register_Incorrect_Email(dataObjects.UserIncorrectEmailRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:18 GMT+07:00" name="TC_07_Register_Incorrect_Email" data-provider="getUserIncorrectEmailRegister" finished-at="2026-09-20T17:31:22 GMT+07:00" duration-ms="4442" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UserIncorrectLoginData(email=solomon.dev@gmail.com, password=1234554321, expectedErrorMessage=Thông tin đăng nhập không chính xác!!!)]]>
+                <![CDATA[UserIncorrectEmailRegister(lastname=Nguyễn Lê, firstname=Châu Anh, email=kiera@@gmail.com, password=12345678Kiera@, description=Email chứa nhiều hơn 1 ký tự @)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_Incorrect_Login_Data -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:10 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:42:11 GMT+07:00" duration-ms="453" status="PASS">
+        </test-method> <!-- TC_07_Register_Incorrect_Email -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:23 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:31:23 GMT+07:00" duration-ms="550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:11 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:42:15 GMT+07:00" duration-ms="4044" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:23 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:31:28 GMT+07:00" duration-ms="5223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_05_Incorrect_Login_Data(dataObjects.UserIncorrectLoginData)[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:15 GMT+07:00" name="TC_05_Incorrect_Login_Data" data-provider="getUserIncorrectLoginData" finished-at="2026-09-19T13:42:16 GMT+07:00" duration-ms="1069" status="PASS">
+        <test-method signature="TC_07_Register_Incorrect_Email(dataObjects.UserIncorrectEmailRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:28 GMT+07:00" name="TC_07_Register_Incorrect_Email" data-provider="getUserIncorrectEmailRegister" finished-at="2026-09-20T17:31:31 GMT+07:00" duration-ms="2334" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UserIncorrectLoginData(email=Solomon.dev@gmail.com, password=Password123!, expectedErrorMessage=Thông tin đăng nhập không chính xác!!!)]]>
+                <![CDATA[UserIncorrectEmailRegister(lastname=Nguyễn Lê, firstname=Châu Anh, email=<script>alert(1)</script>@gmail.com, password=12345678Kiera@, description=Email chứa ký tự script)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_Incorrect_Login_Data -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:16 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:42:16 GMT+07:00" duration-ms="442" status="PASS">
+        </test-method> <!-- TC_07_Register_Incorrect_Email -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:31 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:31:31 GMT+07:00" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:16 GMT+07:00" name="beforeMethod" finished-at="2026-09-19T13:42:21 GMT+07:00" duration-ms="4343" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:31 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:31:36 GMT+07:00" duration-ms="5023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_05_Incorrect_Login_Data(dataObjects.UserIncorrectLoginData)[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:21 GMT+07:00" name="TC_05_Incorrect_Login_Data" data-provider="getUserIncorrectLoginData" finished-at="2026-09-19T13:42:22 GMT+07:00" duration-ms="1071" status="PASS">
+        <test-method signature="TC_07_Register_Incorrect_Email(dataObjects.UserIncorrectEmailRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:36 GMT+07:00" name="TC_07_Register_Incorrect_Email" data-provider="getUserIncorrectEmailRegister" finished-at="2026-09-20T17:31:39 GMT+07:00" duration-ms="2662" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UserIncorrectLoginData(email=solomon.dev@gmail.com, password=pAssword123!, expectedErrorMessage=Thông tin đăng nhập không chính xác!!!)]]>
+                <![CDATA[UserIncorrectEmailRegister(lastname=Nguyễn Lê, firstname=Châu Anh, email=' OR '1'='1@gmail.com, password=12345678Kierra@, description=Email chứa ký tự SQL Injection)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_Incorrect_Login_Data -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.LoginTestcase@41a0aa7d]" started-at="2026-09-19T13:42:22 GMT+07:00" name="afterMethod" finished-at="2026-09-19T13:42:22 GMT+07:00" duration-ms="511" status="PASS">
+        </test-method> <!-- TC_07_Register_Incorrect_Email -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:39 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:31:40 GMT+07:00" duration-ms="1415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testcases.LoginTestcase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:40 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:31:42 GMT+07:00" duration-ms="1904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_08_Register_Incorrect_Password(dataObjects.UserIncorrectPasswordRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:42 GMT+07:00" name="TC_08_Register_Incorrect_Password" data-provider="getUserIncorrectPasswordRegister" finished-at="2026-09-20T17:31:49 GMT+07:00" duration-ms="7049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserIncorrectPasswordRegister(lastname=Ma, firstname=Đại Vương, email=solomon2005.be@gmail.com, password=123, description=Mật khẩu dưới 6-8 ký tự!)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08_Register_Incorrect_Password -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:49 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:31:50 GMT+07:00" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:50 GMT+07:00" name="beforeMethod" finished-at="2026-09-20T17:31:55 GMT+07:00" duration-ms="5267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_08_Register_Incorrect_Password(dataObjects.UserIncorrectPasswordRegister)[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:55 GMT+07:00" name="TC_08_Register_Incorrect_Password" data-provider="getUserIncorrectPasswordRegister" finished-at="2026-09-20T17:31:59 GMT+07:00" duration-ms="4416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserIncorrectPasswordRegister(lastname=Takahashi, firstname=Rieri, email=rieri.takahashi.emilia@gmail.com, password=Emilia-tan is seriously a real angel, Emilia-tan forever!, description=Mật khẩu nhiều hơn 50 ký tự!)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08_Register_Incorrect_Password -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.RegisterTestcase@6c1a5b54]" started-at="2026-09-20T17:31:59 GMT+07:00" name="afterMethod" finished-at="2026-09-20T17:32:00 GMT+07:00" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testcases.RegisterTestcase -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- Suite -->
 </testng-results>
