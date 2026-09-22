@@ -30,5 +30,6 @@ public class RegisterPageObject extends BasePage {
 	
 	public void clickBtnRegister() {
 		clickToElement(driver, RegisterUI.BUTTON_REGISTER);
+		waitForUrlContains(driver, "https://box8.vn/");
 	}
 }

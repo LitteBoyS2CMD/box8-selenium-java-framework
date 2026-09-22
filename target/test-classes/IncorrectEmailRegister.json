@@ -40,5 +40,13 @@
 		"email": "' OR '1'='1@gmail.com",
 		"password": "12345678Kierra@",
 		"description": "Email chứa ký tự SQL Injection"
+	},
+	{
+		"lastname": "Nguyễn",
+		"firstname": "Đại Long",
+		"email": "lengocquyet2k@gmail.com",
+		"password": "1234554321@@",
+		"description": "Email đã tồn tại!"
 	}
+	
 ]

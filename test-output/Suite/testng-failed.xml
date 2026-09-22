@@ -6,13 +6,12 @@
   </listeners>
   <test thread-count="5" name="Run on Chrome(failed)">
     <classes>
-      <class name="testcases.LoginTestcase">
+      <class name="testcases.HomeTestcase">
         <methods>
-          <include name="afterMethod"/>
-          <include name="TC_05_Incorrect_Login_Data" invocation-numbers="2 5"/>
+          <include name="TC_03_Click_Add_To_Cart"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testcases.LoginTestcase -->
+      </class> <!-- testcases.HomeTestcase -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,9 +2,11 @@ package commons;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -67,5 +69,19 @@ public class BasePage {
     public void waitForUrlContains(WebDriver driver, String expectedUrl) {
         new WebDriverWait(driver, Duration.ofSeconds(10))
             .until(ExpectedConditions.urlContains(expectedUrl));
+    }
+    
+    // 10. Hàm Hover (Rê chuột) vào Element theo XPath
+    public void hoverToElement(WebDriver driver, String xpathLocator) {
+        waitForElementVisible(driver, xpathLocator);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(getByXpath(xpathLocator))).perform();
+    }
+
+    // 11. Hàm Scroll cuộn màn hình đến đúng vị trí Element
+    public void scrollToElement(WebDriver driver, String xpathLocator) {
+        waitForElementVisible(driver, xpathLocator);
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(getByXpath(xpathLocator)));
     }
 }
