@@ -38,4 +38,14 @@ public class HomeTestcase extends BaseTest{
 		Assert.assertTrue(notificationResultProduct.contains("kết quả tìm kiếm phù hợp"));
 	}
 	
+	@Test
+	public void TC_03_Click_Product_Detail() {
+		homePage.clickProductDetail();
+	}
+	
+	@Test
+	public void TC_04_Hover_And_Click_Category() {
+		homePage.hoverAndClickButtonCategory();
+		homePage.hoverMenuMega();
+	}
 }

@@ -28,8 +28,9 @@ public class RegisterPageObject extends BasePage {
 		sendKeyToElement(driver, RegisterUI.PASSWORD_INPUT, password);
 	}
 	
-	public void clickBtnRegister() {
+	public HomePageObject clickBtnRegister() {
 		clickToElement(driver, RegisterUI.BUTTON_REGISTER);
 		waitForUrlContains(driver, "https://box8.vn/");
+		return new HomePageObject(driver);
 	}
 }

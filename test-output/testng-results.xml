@@ -1,39 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-22T20:04:04 GMT+07:00" name="Suite" finished-at="2026-09-22T20:04:24 GMT+07:00" duration-ms="20111">
+  <suite started-at="2026-09-24T20:34:03 GMT+07:00" name="Suite" finished-at="2026-09-24T20:34:40 GMT+07:00" duration-ms="36745">
     <groups>
     </groups>
-    <test started-at="2026-09-22T20:04:04 GMT+07:00" name="Run on Chrome" finished-at="2026-09-22T20:04:24 GMT+07:00" duration-ms="20111">
+    <test started-at="2026-09-24T20:34:03 GMT+07:00" name="Run on Chrome" finished-at="2026-09-24T20:34:40 GMT+07:00" duration-ms="36745">
       <class name="testcases.HomeTestcase">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.HomeTestcase@2e8c1c9b]" started-at="2026-09-22T20:04:04 GMT+07:00" name="beforeMethod" finished-at="2026-09-22T20:04:10 GMT+07:00" duration-ms="5663" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:03 GMT+07:00" name="beforeMethod" finished-at="2026-09-24T20:34:12 GMT+07:00" duration-ms="8246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_03_Click_Add_To_Cart()[pri:0, instance:testcases.HomeTestcase@2e8c1c9b]" started-at="2026-09-22T20:04:10 GMT+07:00" name="TC_03_Click_Add_To_Cart" finished-at="2026-09-22T20:04:23 GMT+07:00" duration-ms="13150" status="FAIL">
+        <test-method signature="TC_01_Click_Logo_Wrapper()[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:12 GMT+07:00" name="TC_01_Click_Logo_Wrapper" finished-at="2026-09-24T20:34:13 GMT+07:00" duration-ms="1538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Click_Logo_Wrapper -->
+        <test-method signature="TC_02_Search_Product(dataObjects.ProductData)[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:14 GMT+07:00" name="TC_02_Search_Product" data-provider="getProductData" finished-at="2026-09-24T20:34:17 GMT+07:00" duration-ms="2321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData(nameProduct=Gundam, description=null)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Search_Product -->
+        <test-method signature="TC_02_Search_Product(dataObjects.ProductData)[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:17 GMT+07:00" name="TC_02_Search_Product" data-provider="getProductData" finished-at="2026-09-24T20:34:18 GMT+07:00" duration-ms="1664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData(nameProduct=Kotobukiya, description=null)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Search_Product -->
+        <test-method signature="TC_02_Search_Product(dataObjects.ProductData)[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:18 GMT+07:00" name="TC_02_Search_Product" data-provider="getProductData" finished-at="2026-09-24T20:34:20 GMT+07:00" duration-ms="1438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData(nameProduct=Figure, description=null)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Search_Product -->
+        <test-method signature="TC_02_Search_Product(dataObjects.ProductData)[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:20 GMT+07:00" name="TC_02_Search_Product" data-provider="getProductData" finished-at="2026-09-24T20:34:31 GMT+07:00" duration-ms="11357" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData(nameProduct=Gundam OO Sky, description=Sản phẩm không tồn tại!)]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'product-box')][.//a[contains(@title,'Mô hình đất nặn Bandai Clay Model Kit UNKOSUL DAYS SUPER DX SET 1 - Unkosul Days [GDB]')]]//a[@title='Mua ngay'] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h1[@class='title-head title_search'] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.30'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61836}, goog:processID: 4084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61836/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b279af07fa7618978546ca0ec6053215]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54823}, goog:processID: 5632, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54823/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d88f44be314c28cf5ec0875cc71ba0a0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'product-box')][.//a[contains(@title,'Mô hình đất nặn Bandai Clay Model Kit UNKOSUL DAYS SUPER DX SET 1 - Unkosul Days [GDB]')]]//a[@title='Mua ngay'] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h1[@class='title-head title_search'] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.30'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61836}, goog:processID: 4084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61836/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b279af07fa7618978546ca0ec6053215
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54823}, goog:processID: 5632, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54823/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d88f44be314c28cf5ec0875cc71ba0a0
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at commons.BasePage.waitForElementVisible(BasePage.java:25)
-at commons.BasePage.hoverToElement(BasePage.java:76)
-at pageObjects.HomePageObject.hoverProductAndAddToCart(HomePageObject.java:47)
-at testcases.HomeTestcase.TC_03_Click_Add_To_Cart(HomeTestcase.java:45)
+at commons.BasePage.getElementText(BasePage.java:48)
+at pageObjects.HomePageObject.displayResultSearchProduct(HomePageObject.java:38)
+at testcases.HomeTestcase.TC_02_Search_Product(HomeTestcase.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,7 +111,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_03_Click_Add_To_Cart -->
+        </test-method> <!-- TC_02_Search_Product -->
+        <test-method signature="TC_02_Search_Product(dataObjects.ProductData)[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:31 GMT+07:00" name="TC_02_Search_Product" data-provider="getProductData" finished-at="2026-09-24T20:34:34 GMT+07:00" duration-ms="2398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData(nameProduct=Gundam, description=null)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Search_Product -->
+        <test-method signature="TC_03_Click_Product_Detail()[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:34 GMT+07:00" name="TC_03_Click_Product_Detail" finished-at="2026-09-24T20:34:36 GMT+07:00" duration-ms="2508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Click_Product_Detail -->
+        <test-method signature="TC_04_Hover_And_Click_Category()[pri:0, instance:testcases.HomeTestcase@5b1669c0]" started-at="2026-09-24T20:34:36 GMT+07:00" name="TC_04_Hover_And_Click_Category" finished-at="2026-09-24T20:34:40 GMT+07:00" duration-ms="3437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Hover_And_Click_Category -->
       </class> <!-- testcases.HomeTestcase -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- Suite -->

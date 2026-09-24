@@ -19,8 +19,9 @@ public class LoginPageObject extends BasePage {
 		sendKeyToElement(driver, LoginUI.PASSWORD_INPUT, password);
 	}
 	
-	public void clickBtnLogin() {
+	public HomePageObject clickBtnLogin() {
 		clickToElement(driver, LoginUI.BUTTON_LOGIN);
-		waitForUrlContains(driver, "https://box8.vn/");
+		waitForUrlContains(driver, "https://box8.vn/account");
+		return new HomePageObject(driver);
 	}
 }

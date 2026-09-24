@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Run on Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 22 20:11:05 GMT+07:00 2026</td>
+<td>Started on:</td><td>Thu Sep 24 20:34:03 GMT+07:00 2026</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4392 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36745 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,42 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.HomeTestcase.TC_03_Click_Add_To_Cart()'><b>TC_03_Click_Add_To_Cart</b><br>Test class: testcases.HomeTestcase</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [TC_03_Click_Add_To_Cart] with [class dataObjects.ProductData].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+<td title='testcases.HomeTestcase.TC_02_Search_Product()'><b>TC_02_Search_Product</b><br>Test class: testcases.HomeTestcase<br>Parameters: ProductData(nameProduct=Gundam OO Sky, description=Sản phẩm không tồn tại!)</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h1[@class=&apos;title-head title_search&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54823}, goog:processID: 5632, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54823/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d88f44be314c28cf5ec0875cc71ba0a0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commons.BasePage.waitForElementVisible(BasePage.java:25)
+	at commons.BasePage.getElementText(BasePage.java:48)
+	at pageObjects.HomePageObject.displayResultSearchProduct(HomePageObject.java:38)
+	at testcases.HomeTestcase.TC_02_Search_Product(HomeTestcase.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1476061571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1476061571'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [TC_03_Click_Add_To_Cart] with [class dataObjects.ProductData].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1544031987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1544031987'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h1[@class=&apos;title-head title_search&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.30&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54823}, goog:processID: 5632, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54823/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d88f44be314c28cf5ec0875cc71ba0a0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commons.BasePage.waitForElementVisible(BasePage.java:25)
+	at commons.BasePage.getElementText(BasePage.java:48)
+	at pageObjects.HomePageObject.displayResultSearchProduct(HomePageObject.java:38)
+	at testcases.HomeTestcase.TC_02_Search_Product(HomeTestcase.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -113,8 +132,52 @@ For more information on native dependency injection please refer to https://test
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testcases.HomeTestcase@53fe15ff</td></tr>
+<td>11</td>
+<td>testcases.HomeTestcase@5b1669c0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.HomeTestcase.TC_02_Search_Product()'><b>TC_02_Search_Product</b><br>Test class: testcases.HomeTestcase<br>Parameters: ProductData(nameProduct=Kotobukiya, description=null)</td>
+<td></td>
+<td>1</td>
+<td>testcases.HomeTestcase@5b1669c0</td></tr>
+<tr>
+<td title='testcases.HomeTestcase.TC_04_Hover_And_Click_Category()'><b>TC_04_Hover_And_Click_Category</b><br>Test class: testcases.HomeTestcase</td>
+<td></td>
+<td>3</td>
+<td>testcases.HomeTestcase@5b1669c0</td></tr>
+<tr>
+<td title='testcases.HomeTestcase.TC_02_Search_Product()'><b>TC_02_Search_Product</b><br>Test class: testcases.HomeTestcase<br>Parameters: ProductData(nameProduct=Figure, description=null)</td>
+<td></td>
+<td>1</td>
+<td>testcases.HomeTestcase@5b1669c0</td></tr>
+<tr>
+<td title='testcases.HomeTestcase.TC_02_Search_Product()'><b>TC_02_Search_Product</b><br>Test class: testcases.HomeTestcase<br>Parameters: ProductData(nameProduct=Gundam, description=null)</td>
+<td></td>
+<td>2</td>
+<td>testcases.HomeTestcase@5b1669c0</td></tr>
+<tr>
+<td title='testcases.HomeTestcase.TC_03_Click_Product_Detail()'><b>TC_03_Click_Product_Detail</b><br>Test class: testcases.HomeTestcase</td>
+<td></td>
+<td>2</td>
+<td>testcases.HomeTestcase@5b1669c0</td></tr>
+<tr>
+<td title='testcases.HomeTestcase.TC_02_Search_Product()'><b>TC_02_Search_Product</b><br>Test class: testcases.HomeTestcase<br>Parameters: ProductData(nameProduct=Gundam, description=null)</td>
+<td></td>
+<td>2</td>
+<td>testcases.HomeTestcase@5b1669c0</td></tr>
+<tr>
+<td title='testcases.HomeTestcase.TC_01_Click_Logo_Wrapper()'><b>TC_01_Click_Logo_Wrapper</b><br>Test class: testcases.HomeTestcase</td>
+<td></td>
+<td>1</td>
+<td>testcases.HomeTestcase@5b1669c0</td></tr>
 </table><p>
 </body>
 </html>

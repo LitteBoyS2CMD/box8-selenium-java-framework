@@ -10,10 +10,12 @@ import commons.BaseTest;
 import commons.GlobalDataReader;
 import dataObjects.UserDataLogin;
 import dataObjects.UserIncorrectDataLogin;
+import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 
 public class LoginTestcase extends BaseTest {
     private LoginPageObject loginPage;
+    private HomePageObject homePage;
 
     @BeforeMethod
     public void beforeMethod() {
@@ -37,8 +39,7 @@ public class LoginTestcase extends BaseTest {
         loginPage.enterEmail(user.getEmail());
         loginPage.enterPassword(user.getPassword());
         
-        loginPage.clickBtnLogin();
-        loginPage.waitForUrlContains(driver, "https://box8.vn/");
+        homePage = loginPage.clickBtnLogin();
     }
     
     // Testcase bỏ trống email, password

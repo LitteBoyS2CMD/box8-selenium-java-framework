@@ -24,10 +24,6 @@ public class HomePageObject extends BasePage {
 		clickToElement(driver, HomeUI.BUTTON_SEARCH);
 	}
 	
-	public void clickButtonCart() {
-		clickToElement(driver, HomeUI.BUTTON_CART);
-	}
-	
 	public void hoverAndClickButtonCategory() {
 		hoverToElement(driver, HomeUI.BUTTON_CATEGORY);
 		clickToElement(driver, HomeUI.BUTTON_CATEGORY);
@@ -40,5 +36,9 @@ public class HomePageObject extends BasePage {
 
 	public String displayResultSearchProduct() {
 		return getElementText(driver, HomeUI.NOTIFICATION_SEARCH_PRODUCT);
+	}
+	
+	public void clickProductDetail() {
+		clickToElement(driver, HomeUI.PRODUCT_DETAIL);
 	}
 }

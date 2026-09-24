@@ -10,11 +10,6 @@
 	"expectedErrorMessage": "Thông tin đăng nhập không chính xác!!!"
   },
   {
-	"email": "Solomon.dev@gmail.com",
-	"password": "Password123!",
-	"expectedErrorMessage": "Thông tin đăng nhập không chính xác!!!"
-  },
-  {
 	"email": "solomon.dev@gmail.com",
 	"password": "pAssword123!",
 	"expectedErrorMessage": "Thông tin đăng nhập không chính xác!!!"
