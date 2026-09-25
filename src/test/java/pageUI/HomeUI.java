@@ -8,4 +8,6 @@ public class HomeUI {
 	public static final String BUTTON_MENU_MEGA = "//div[@class='menu_mega']";
 	public static final String NOTIFICATION_SEARCH_PRODUCT = "//h1[@class='title-head title_search']";
 	public static final String PRODUCT_DETAIL = "//h3/a[contains(@title, 'Immortal Justice Gundam')]";
+	public static final String ARRANGE_ELEMENT = "//h3[text()='Sắp xếp:']";
+	public static final String FOOTER_SECTION = "//footer[@class='footer']";
 }

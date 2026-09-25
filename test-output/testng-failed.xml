@@ -8,7 +8,7 @@
     <classes>
       <class name="testcases.HomeTestcase">
         <methods>
-          <include name="TC_02_Search_Product" invocation-numbers="3"/>
+          <include name="TC_02_Search_Product" invocation-numbers="1"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- testcases.HomeTestcase -->

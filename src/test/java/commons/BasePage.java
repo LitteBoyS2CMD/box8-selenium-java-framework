@@ -78,10 +78,30 @@ public class BasePage {
         actions.moveToElement(driver.findElement(getByXpath(xpathLocator))).perform();
     }
 
-    // 11. Hàm Scroll cuộn màn hình đến đúng vị trí Element
+    // 11a. Hàm Scroll xuống Element mượt mà (Smooth Scroll)
     public void scrollToElement(WebDriver driver, String xpathLocator) {
-        waitForElementVisible(driver, xpathLocator);
+        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(longTimeout));
+        explicitWait.until(ExpectedConditions.presenceOfElementLocated(getByXpath(xpathLocator)));
+
+        WebElement element = driver.findElement(getByXpath(xpathLocator));
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-        jsExecutor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(getByXpath(xpathLocator)));
+
+        // Cuộn mượt (smooth) xuống element và bù trừ 100px tránh Sticky Header
+        jsExecutor.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", element);
+        jsExecutor.executeScript("window.scrollBy({top: -100, behavior: 'smooth'});");
+    }
+
+    // 11b. Bổ sung: Hàm Cuộn ngược lên Header / Đầu trang mượt mà
+    public void scrollToHeader(WebDriver driver) {
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("window.scrollTo({top: 0, behavior: 'smooth'});");
+    }
+    
+    public void sleepInSeconds(long timeoutInSeconds) {
+        try {
+            Thread.sleep(timeoutInSeconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

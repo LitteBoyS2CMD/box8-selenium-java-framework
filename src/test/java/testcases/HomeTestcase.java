@@ -23,7 +23,7 @@ public class HomeTestcase extends BaseTest{
 	public ProductData[] getProductData() {
 		return GlobalDataReader.getJsonDataArray("NameProductData.json", ProductData[].class);
 	}
-	
+
 	@Test
 	public void TC_01_Click_Logo_Wrapper() {
 		homePage.clickLogoWrapper();
@@ -47,5 +47,10 @@ public class HomeTestcase extends BaseTest{
 	public void TC_04_Hover_And_Click_Category() {
 		homePage.hoverAndClickButtonCategory();
 		homePage.hoverMenuMega();
+	}
+	
+	@Test
+	public void TC_05_Scroll_To_Footer() {
+		homePage.scrollToFooterAndHeader();
 	}
 }

@@ -41,4 +41,13 @@ public class HomePageObject extends BasePage {
 	public void clickProductDetail() {
 		clickToElement(driver, HomeUI.PRODUCT_DETAIL);
 	}
+	
+	public void scrollToFooterAndHeader() {
+		scrollToElement(driver, HomeUI.ARRANGE_ELEMENT);
+		sleepInSeconds(1);
+		scrollToElement(driver, HomeUI.FOOTER_SECTION);
+		sleepInSeconds(1);
+		scrollToHeader(driver);
+		sleepInSeconds(1);
+	}
 }
